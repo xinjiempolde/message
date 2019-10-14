@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<main class="container">
+    <!-- header为html5新增加内容，不用再写<div class='header'> -->
+    <header>
+        <h1 class="text-center display-4">
+            <a class="text-success"><strong>留言板</strong></a>
+        </h1>
+    </header>
+
+    <!-- 消息闪现区域 -->
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-info alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+    <!-- 留言内容部分 -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- 页脚部分 -->
+    <footer class="text-center">
+        <a href="https://github.com/xinjiempolde?tab=repositories">Github</a>
+    </footer>
+</main>
+<div class="-">
+    {% for item in list %}
+    <p>{{ item['info'] }}</p>
+    {% endfor %}
+</div>
+<form action="login" method="post">
+    <input type="text" name="info"/>
+    <input type="submit" value="提交"/>
+</form>
+<a href="./logout">推出</a>
+<!-- jquery一定要在之前引用，这个坑又花我一晚上 -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
