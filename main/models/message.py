@@ -1,14 +1,14 @@
 from .. import db
+from datetime import datetime
 
 
 class Message(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(20))
     content = db.Column(db.String(200))
-    submit_time = db.Column(db.DateTime)
+    submit_time = db.Column(db.DateTime, default=datetime.utcnow, index=True)
 
-    def __init__(self, id, name, content, time):
-        self.id = id
+    def __init__(self, name, content, time):
         self.name = name
         self.content = content
-        self.time = time
+        self.submit_time = time

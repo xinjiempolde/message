@@ -5,10 +5,16 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 import pymysql.cursors
 from main import app
-app.secret_key = '123456'
-app.debug = True
+from ..models.message import Message
 
 
+@app.route('/')
+def index():
+    messages = Message.query.all()
+    return render_template('index.html', messages=messages)
+
+
+"""
 @app.route('/')
 def hello_world():
     if 'user' in session:
@@ -28,6 +34,7 @@ def hello_world():
         cursor2.execute(sql2)
         u = cursor2.fetchall()
         return render_template('index.html', list=u)
+"""
 
 """
 @app.route('/submit', methods=['POST', 'GET'])
@@ -43,6 +50,7 @@ def submit():
     flash("你成功地进行了留言^_^~~~")
     return redirect(url_for('hello_world'))
 """
+
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():

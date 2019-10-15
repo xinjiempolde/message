@@ -15,7 +15,13 @@
         </h1>
     </header>
 
-    <!-- 消息闪现区域 -->
+    <!-- 消息提示区域 -->
+    <div id="flash_message">
+        <div class="alert alert-info alert-dismissible">
+            <button type="button" class="close">&times;</button>
+            <p>账户或密码不能为空</p>
+        </div>
+    </div>
     {% for message in get_flashed_messages() %}
         <div class="alert alert-info alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -29,22 +35,16 @@
 
     <!-- 页脚部分 -->
     <footer class="text-center">
-        <a href="https://github.com/xinjiempolde?tab=repositories">Github</a>
+        {% block footer %}
+            <a href="https://github.com/xinjiempolde?tab=repositories">Github</a>
+            <p><a id="bottom" href="#" title="Go Top">&uarr;</a></p>
+        {% endblock %}
     </footer>
 
 </main>
-<div class="-">
-    {% for item in list %}
-        <p>{{ item['info'] }}</p>
-    {% endfor %}
-</div>
-<form action="submit" method="post">
-    <input type="text" name="info"/>
-    <input type="submit" value="提交"/>
-</form>
-<a href="./logout">推出</a>
 <!-- jquery一定要在之前引用，这个坑又花我一晚上 -->
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/my_js.js') }}"></script>
 </body>
 </html>
