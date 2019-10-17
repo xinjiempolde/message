@@ -15,11 +15,12 @@
         </h1>
     </header>
 
+
     <!-- 消息提示区域 -->
     <div id="flash_message">
         <div class="alert alert-info alert-dismissible">
             <button type="button" class="close">&times;</button>
-            <p>账户或密码不能为空</p>
+            <p>姓名或留言内容不能为空</p>
         </div>
     </div>
     {% for message in get_flashed_messages() %}
@@ -44,7 +45,10 @@
 </main>
 <!-- jquery一定要在之前引用，这个坑又花我一晚上 -->
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/my_js.js') }}"></script>
+{{ moment.include_moment(local_js=url_for('static', filename='js/moment-with-locales.min.js')) }}
+{{ moment.locale('zh-cn') }}
 </body>
 </html>

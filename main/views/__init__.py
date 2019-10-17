@@ -1,4 +1,4 @@
 """
     views
 """
-from . import controller
+from . import index
