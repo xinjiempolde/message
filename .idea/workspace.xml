@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414e584a-dde3-4ba3-8961-a9c8416caae7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/views/index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/moment-with-locales.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/READ.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controller/add_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/controller/add_message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/init_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/init_database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/message.db" beforeDir="false" afterPath="$PROJECT_DIR$/main/message.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models/message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views/controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/my_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/my_js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +155,7 @@
       <workItem from="1571217230258" duration="534000" />
       <workItem from="1571232046228" duration="363000" />
       <workItem from="1571239261186" duration="98000" />
-      <workItem from="1571307737645" duration="7740000" />
+      <workItem from="1571307737645" duration="8248000" />
     </task>
     <servers />
   </component>
