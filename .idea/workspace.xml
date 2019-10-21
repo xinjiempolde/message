@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414e584a-dde3-4ba3-8961-a9c8416caae7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controller/add_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/controller/add_message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/message.db" beforeDir="false" afterPath="$PROJECT_DIR$/main/message.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -159,6 +157,7 @@
       <workItem from="1571307737645" duration="8607000" />
       <workItem from="1571620836456" duration="2713000" />
       <workItem from="1571644843884" duration="1759000" />
+      <workItem from="1571655802076" duration="16000" />
     </task>
     <servers />
   </component>
