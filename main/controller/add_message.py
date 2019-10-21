@@ -1,3 +1,4 @@
+# coding: utf-8
 from .. import app, db
 from ..models.message import Message
 from flask import render_template, flash, request, redirect, url_for, session

@@ -1,3 +1,4 @@
+# coding: utf-8
 """
     :author: XinJi Zhou
     :last editTime: 2019-10-15

@@ -1,4 +1,4 @@
-import os
+# coding: utf-8
 
 # app设置
 DEBUG = True
